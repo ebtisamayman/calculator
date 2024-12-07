@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="calculator">
+        <input type="text" id="result"  disabled>
+       <div class="buttons">
+           
+        <span class="clear" onclick="deleteLast()">Del</span>
+        <span onclick="clearAll()">Ac</span>
+           <span onclick="appendOperator('*')">*</span>
+           <span onclick="appendOperator('%')" >%</span>
+           <span onclick="appendNumber(9)">9</span>
+           <span onclick="appendNumber(8)">8</span>
+           <span onclick="appendNumber(7)" >7</span>
+           <span onclick="appendOperator('/')">/</span>
+           <span onclick="appendNumber(4)" >4</span>
+           <span onclick="appendNumber(5)">5</span>
+           <span onclick="appendNumber(6)" >6</span>
+           <span onclick="appendOperator('-')">-</span>
+           <span onclick="appendNumber(1)" >1</span>
+           <span onclick="appendNumber(2)">2</span>
+           <span onclick="appendNumber(3)">3</span> 
+           <span onclick="appendOperator('+')">+</span>
+           <span onclick="appendNumber(0)">0</span>
+           <span onclick="appendNumber('00') ">00</span>
+           <span onclick="appendOperator('.')">.</span>
+           <span id="equal" onclick="calculate()">=</span>
+           
+       </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
